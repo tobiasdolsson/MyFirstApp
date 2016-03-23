@@ -5,4 +5,5 @@
     <string name="button_send">Accelerometer</string>
     <string name="compass">Compass</string>
     <string name="title_activity_start_accelerator">My Accelerator</string>
+    <string name="title_activity_compass">CompassActivity</string>
 </resources>

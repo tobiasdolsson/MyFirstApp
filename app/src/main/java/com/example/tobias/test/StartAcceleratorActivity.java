@@ -49,9 +49,9 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
         float y = event.values[1];
         float z = event.values[2];
 
-        text0.setText(String.format("%.2f",x));
-        text1.setText(String.format("%.2f",y));
-        text2.setText(String.format("%.2f",z));
+        text0.setText("X: "+ String.format("%.2f",x));
+        text1.setText("Y: "+ String.format("%.2f",y));
+        text2.setText("Z: "+ String.format("%.2f",z));
 
     }
 

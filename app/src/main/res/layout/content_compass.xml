@@ -8,12 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:gravity="center"
-    android:id="@+id/content"
-    android:orientation="horizontal"
+    android:layout_gravity="center"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.tobias.test.StartAcceleratorActivity"
-    tools:showIn="@layout/activity_start_accelerator">
+    tools:context="com.example.tobias.test.CompassActivity"
+    tools:showIn="@layout/activity_compass">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,30 +19,13 @@
         android:orientation="vertical"
         >
 
-        <TextView android:id="@+id/value0"
-
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/azimut"
             android:textSize="50sp"
-            android:textAlignment="center"
-             />
-
-        <TextView android:id="@+id/value1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="50sp"
-            android:textAlignment="center"
-             />
-
-        <TextView android:id="@+id/value2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="50sp"
-            android:textAlignment="center"
             />
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

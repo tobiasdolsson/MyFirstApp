@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
 
         android:text="@string/compass"
-        android:onClick="StartCompass" />
+        android:onClick="startCompass"
+        android:id="@+id/compass"
+        />
 
 </LinearLayout>
