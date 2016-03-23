@@ -38,6 +38,11 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
         text1 = (TextView) findViewById(R.id.value1);
         text2 = (TextView) findViewById(R.id.value2);
 
+
+    }
+
+    public void testMetod(){
+
     }
 
     public void onAccuracyChanged(Sensor sensor, int accuracy){
