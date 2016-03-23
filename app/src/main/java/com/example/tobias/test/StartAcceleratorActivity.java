@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class StartAcceleratorActivity extends AppCompatActivity implements SensorEventListener {
-
+    //testpush
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
     TextView text0;
@@ -41,9 +41,6 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
 
     }
 
-    public void testMetod(){
-
-    }
 
     public void onAccuracyChanged(Sensor sensor, int accuracy){
 
