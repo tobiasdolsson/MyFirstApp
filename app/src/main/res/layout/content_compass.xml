@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:id="@+id/compassimage"
+            android:src="@drawable/compassimage"
             />
 
     </LinearLayout>

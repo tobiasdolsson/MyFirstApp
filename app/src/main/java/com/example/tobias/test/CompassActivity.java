@@ -10,6 +10,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -26,6 +28,8 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
     private TextView degrees;
     private TextView direction;
     private ImageView image;
+    private RotateAnimation rotate;
+    float rotationDegree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +40,9 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Ro = new float[9];
         I = new float[9];
-        degrees=(TextView) findViewById(R.id.azimut);
-        direction=(TextView) findViewById(R.id.direction);
+        degrees = (TextView) findViewById(R.id.azimut);
+        direction = (TextView) findViewById(R.id.direction);
+        image = (ImageView) findViewById(R.id.compassimage);
         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         magnetometer = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -76,7 +81,9 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
             if (success) {
                 float orientation[] = new float[3];
                 SensorManager.getOrientation(Ro, orientation);
+                //rotationDegree = orientation[0];
                 azimut = Math.toDegrees(orientation[0]);
+                float fazimut = (float) azimut;
                 if (azimut < 0) {
                     azimut += 360;
                 }
@@ -98,6 +105,12 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
                 if (range == 13 || range == 14)
                     direction.setText("NORTHWEST");
                 degrees.setText(String.format("%.0f", azimut)+((char) 176));
+
+                rotate = new RotateAnimation(rotationDegree,-fazimut, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+                rotate.setDuration(210);
+                rotate.setFillAfter(true);
+                image.startAnimation(rotate);
+                rotationDegree = -fazimut;
             }
 
         }
