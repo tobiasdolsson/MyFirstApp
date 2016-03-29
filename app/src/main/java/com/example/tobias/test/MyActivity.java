@@ -22,6 +22,7 @@ public class MyActivity extends AppCompatActivity{
         setContentView(R.layout.activity_my);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Sensor applications");
     }
 
     public void startAccelerometer(View view){
@@ -31,6 +32,11 @@ public class MyActivity extends AppCompatActivity{
 
     public void startCompass(View view){
         Intent intent = new Intent(this, CompassActivity.class);
+        startActivity(intent);
+    }
+
+    public void startCompass2(View view){
+        Intent intent = new Intent(this, RotationVector.class);
         startActivity(intent);
     }
 }

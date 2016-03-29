@@ -29,7 +29,7 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
         setContentView(R.layout.activity_start_accelerator);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setTitle("Accelerator");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);

@@ -36,6 +36,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tobias.test.MyActivity" />
         </activity>
+        <activity
+            android:name=".RotationVector"
+            android:label="@string/title_activity_rotation_vector"
+            android:parentActivityName=".MyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tobias.test.MyActivity" />
+        </activity>
     </application>
 
 </manifest>

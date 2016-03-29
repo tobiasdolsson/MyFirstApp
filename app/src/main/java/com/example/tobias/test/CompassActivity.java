@@ -31,12 +31,14 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
     private RotateAnimation rotate;
     float rotationDegree;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compass);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Compass");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Ro = new float[9];
         I = new float[9];
