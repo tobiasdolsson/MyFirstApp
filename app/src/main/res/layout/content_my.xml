@@ -18,6 +18,11 @@
         android:text="@string/button_send"
         android:onClick="startAccelerometer"
         android:id="@+id/acc"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#FFFFFF"
         />
 
     <Button
@@ -26,6 +31,11 @@
         android:text="@string/compass"
         android:onClick="startCompass"
         android:id="@+id/compass"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#FFFFFF"
         />
 
     <Button
@@ -34,6 +44,11 @@
         android:text="@string/compass2"
         android:onClick="startCompass2"
         android:id="@+id/compass2"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#FFFFFF"
         />
 
 </LinearLayout>

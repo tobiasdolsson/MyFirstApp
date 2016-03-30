@@ -25,6 +25,7 @@
             android:id="@+id/azimut2"
             android:textSize="50sp"
             android:textAlignment="center"
+            android:textColor="#000"
             />
 
         <TextView
@@ -33,6 +34,7 @@
             android:id="@+id/direction2"
             android:textSize="50sp"
             android:textAlignment="center"
+            android:textColor="#000"
             />
 
         <ImageView

@@ -25,6 +25,7 @@
             android:id="@+id/azimut"
             android:textSize="50sp"
             android:textAlignment="center"
+            android:textColor="#000"
             />
 
         <TextView
@@ -33,6 +34,7 @@
             android:id="@+id/direction"
             android:textSize="50sp"
             android:textAlignment="center"
+            android:textColor="#000"
             />
 
         <ImageView
@@ -41,6 +43,7 @@
             android:layout_gravity="bottom"
             android:id="@+id/compassimage"
             android:src="@drawable/compassimage"
+            android:textColor="#000"
             />
 
     </LinearLayout>
