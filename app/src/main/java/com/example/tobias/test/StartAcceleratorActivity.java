@@ -22,6 +22,9 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
     TextView text0;
     TextView text1;
     TextView text2;
+    private float x;
+    private float y;
+    private float z;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +50,9 @@ public class StartAcceleratorActivity extends AppCompatActivity implements Senso
     }
 
     public void onSensorChanged(SensorEvent event){
-        float x = event.values[0];
-        float y = event.values[1];
-        float z = event.values[2];
+        x = event.values[0];
+        y = event.values[1];
+        z = event.values[2];
 
         text0.setText("X: "+ String.format("%.2f",x));
         text1.setText("Y: "+ String.format("%.2f",y));
